@@ -1,0 +1,122 @@
+body {
+  font-family: 'Roboto', Arial, sans-serif;
+  margin: 0;
+  background: #f5f6fa;
+  color: #222;
+}
+
+header {
+  background: #232f3e;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  letter-spacing: 2px;
+}
+
+header nav {
+  margin-top: 10px;
+}
+header nav a {
+  color: #f90;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin: 40px auto;
+  max-width: 1100px;
+}
+
+.product-card {
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.09);
+  overflow: hidden;
+  width: 320px;
+  transition: transform 0.22s, box-shadow 0.22s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.product-card:hover {
+  transform: translateY(-7px) scale(1.025);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.16);
+}
+
+.product-card img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.product-card h2 {
+  font-size: 1.3rem;
+  margin: 16px 0 6px 0;
+  color: #232f3e;
+}
+
+.product-card .desc {
+  font-size: 1rem;
+  margin-bottom: 16px;
+  color: #444;
+  padding: 0 14px;
+  text-align: center;
+}
+
+.buy-btn {
+  background: linear-gradient(90deg, #FF9900 0%, #FFB84D 100%);
+  color: #fff;
+  padding: 13px 32px;
+  border: none;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+
+.buy-btn:hover { background: #232f3e; }
+
+.disclaimer {
+  margin: 36px auto 0 auto;
+  max-width: 800px;
+  font-size: 0.98rem;
+  color: #9a7c0b;
+  background: #fffbe3;
+  padding: 15px 24px;
+  border-radius: 5px;
+  box-shadow: 0 2px 8px rgba(245,193,34,0.13);
+}
+
+footer {
+  background: #232f3e;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0 10px 0;
+  margin-top: 44px;
+  font-size: 1.08rem;
+}
+
+.socials a {
+  margin: 0 7px;
+  font-size: 1.27rem;
+}
+@media (max-width: 900px) {
+  .product-grid {
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+}
